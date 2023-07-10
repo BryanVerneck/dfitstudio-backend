@@ -21,4 +21,4 @@ mongoose.connect('mongodb+srv://BryanVerneck:9Fji7sWVdHvnCSFO@dfitstudio.ve5mzpu
     app.listen(port, () => {
       console.log(`Server running on http://localhost:${port}`);
     });
-  }).catch(() => console.log('Erro ao conectar ao MongoDB'));
+  }).catch((e) => console.log(e.message));
